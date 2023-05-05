@@ -53,7 +53,7 @@ public class Uygulama3Activity extends AppCompatActivity {
         }
 
         private void getAllUrunler() {
-            database = this.openOrCreateDatabase ("Urun", MODE_PRIVATE,null);
+            database = this.openOrCreateDatabase ( "Urun", MODE_PRIVATE,null);
             Cursor cursor = database.rawQuery("SELECT * FROM urunler", null);
             int kolonId = cursor.getColumnIndex("id");
             int kolonUrunAdi = cursor.getColumnIndex("urunadi");
